@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -146,4 +147,154 @@
     }); 
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/quora_survey/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/quora_survey/node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/quora_survey/node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="/quora_survey/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html" class="navbar-brand mr-auto"><img src="/img/img/logo.png" alt="logo" class="" height="30" width="41"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a href="./index.html" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a href="./poll.html" class="nav-link"><span class="fa fa-bar-chart fa-lg"></span> Polls</a></li>
+                    <li class="nav-item"><a href="./notification.html" class="nav-link"><span class="fa fa-bell fa-lg"></span> Notification</a></li>
+                    <li class="nav-item"><a href="./profile.html" class="nav-link"><span class="fa fa-user fa-lg"></span> Profile</a></li>
+                </ul>
+                <form class="form-inline">
+                    <i class="fa fa-search btn btn-default" aria-hidden="true"></i>
+                    <input class="form-control btn pranab" type="text" placeholder="Search"
+                      aria-label="Search" name="Search" id='nav-search'>
+                  </form>
+                <span class="navbar-text"><a type="button" role="button" id="loginbtnModal">
+                    <span class="fa fa-sign-in"></span>Login
+                </a></span>
+                <span class="navbar-text"><a type="button" role="button" id="signupbtnModal">
+                    <span class="fa fa-sign-in"></span>SignUp
+                </a></span>
+            </div>
+        </div>
+    </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4><button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email" placeholder="Enter email" class="form-control">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="password"></label>
+                            <input type="text" name="password" id="password" placeholder="Password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-sm-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-2 offset-8">
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </div>
+                        <div class="form-group col-sm-2 ">
+                            <button type="button" class="btn btn-grey btn-block" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <div id="signupModal" class="modal fade" role="dialog">
+        <div class="modal-dialog " role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">SignUp</h4><button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="first_name"></label>
+                            <input type="text" name="first_name" id="first_name" placeholder="First name" class="form-control">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="last_name"></label>
+                            <input type="text" name="last_name" id="last_name" placeholder="Last name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email" placeholder="Enter email" class="form-control">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="password"></label>
+                            <input type="text" name="password" id="password" placeholder="Password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-sm-auto">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-2 offset-8">
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </div>
+                        <div class="form-group col-sm-2 ">
+                            <button type="button" class="btn btn-grey btn-block" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <script src="/quora_survey/node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="/quora_survey/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/quora_survey/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+         $(document).ready(function(){
+            $("#loginbtnModal").click(function(){
+                    $('#loginModal').modal('show');
+            });
+            $("#signupbtnModal").click(function(){
+                    $('#signupModal').modal('show');
+            });
+         });
+         $(function(){ 
+    	$(".btn").click(function(e){ 
+      	$(".pranab").css("width","500px"); 
+        e.stopPropagation(); 
+      }); 
+      $(window).click(function(){ 
+      	$(".pranab").css("width","300px"); 
+      }); 
+    }); 
+    </script>
+</body>
+>>>>>>> d5231948ca3c524937a638757b958fdcaa1098ab
 </html>
