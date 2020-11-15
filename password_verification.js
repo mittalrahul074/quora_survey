@@ -1,14 +1,18 @@
-function matchPassword() {  
-  var pw1 = document.getElementById("pswd1");  
-  var pw2 = document.getElementById("pswd2"); 
-  console.log(pw1);
-  console.log(pw2); 
-  if(pw1 != pw2)  
-  {   
-    alert("Passwords did not match");  
-    console.log('1');
-  } else {  
-    alert("Password created successfully"); 
-    console.log('2'); 
-  }  
-}  
+document.querySelector('.button').onclick = function(){
+  var password=document.querySelector('.password').value,
+      re_password=document.querySelector('.re-password').value;
+  if(password=="")
+  {
+    alert("Password cann't be blank");
+  }
+  else if(password != re_password)
+  {
+    alert("The password you entered and the confirm password doesn't match");
+    return false;
+  }
+  else if(password==re_password)
+  {
+    alert("Login success");
+  }
+  return true;
+}
