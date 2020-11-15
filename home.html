@@ -15,7 +15,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="index.html" class="navbar-brand mr-auto"><img src="/img/img/logo.png" alt="logo" class="" height="30" width="41"></a>
+            <!-- <a href="index.html" class="navbar-brand mr-auto"><img src="/img/img/logo.png" alt="logo" class="" height="30" width="41"></a> -->
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a href="./index.html" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -78,7 +78,7 @@
                 <div class="modal-header">
                     <h4 class="modal-title">SignUp</h4><button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <form class="modal-body" id="myForm" onsubmit="return checkForm(this);">
+                <form class="modal-body" id="myForm">
                     <div class="form-row">
                         <div class="form-group col-sm-6">
                             <label for="first_name"></label>
@@ -97,12 +97,12 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-sm-6">
-                            <label for="pwd1"></label>
-                            <input type="text" name="pwd1" id="field_pwd1" placeholder="Password" class="form-control">
+                            <label for="pswd1"></label>
+                            <input type="text" name="pswd1" id="pswd1" placeholder="Password" class="form-control">
                         </div>
                         <div class="form-group col-sm-6">
-                            <label for="pwd2"></label>
-                            <input type="text" name="pwd2" id="field_pwd2" placeholder="Re-enter Password" class="form-control">
+                            <label for="pswd2"></label>
+                            <input type="text" name="pswd2" id="pswd2" placeholder="Re-enter Password" class="form-control">
                         </div>
                     </div>
                     <div class="form-row">
@@ -116,7 +116,7 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-sm-2.5 offset-9">
-                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                            <button type="submit" class="btn btn-primary btn-block" onclick="matchPassword()">Submit</button>
                         </div>
                     </div>
                 </form>
